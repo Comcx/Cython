@@ -82,30 +82,6 @@ using std::set;
 
 
 
-/**
-* The Eigen math calculation tool
-* if you want to use Eigen, remember to use 'Eigen' namespace
-* @namespace: Eigen
-* @author: Eigen team
-*
-*/
-#include "Eigen\Core"
-// example of using namespace, this pre-definition shall be useful
-// if you do not like these pre-definitions, you can erase them.
-#define Matrix Eigen::Matrix
-#define Array Eigen::Array
-
-#define matrix_d Eigen::MatrixXd
-#define array_d Eigen::ArrayXXd
-/**
-* Grammar sugar of MatrixXT(XT: dimension and type)
-* Types: i(int), f(float), d(double)
-*
-*/
-#define matrix_(rd, cd) Matrix<double, rd, cd>
-#define array_(rd, cd) Array<double, rd, cd>
-
-
 
 
 
