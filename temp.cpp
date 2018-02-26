@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {	// main function: the entrance of the program
 		ifstream raw(raw_name);
 		ofstream out(out_name);
 
-		out << braceless(raw);
+		out << arrange_by_end(raw);
 		raw.close();
 		out.close();
 
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {	// main function: the entrance of the program
 			ifstream raw(raw_name);
 			ofstream out("out" + num2str(i) + ".py");
 
-			out << braceless(raw);
+			out << arrange_by_end(raw);
 			raw.close();
 			out.close();
 		}
